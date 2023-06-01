@@ -1,5 +1,5 @@
 class EmailsController < ApplicationController
-  require "faker"
+  require 'faker'
   before_action :set_email, only: %i[ show edit update destroy ]
 
   # GET /emails or /emails.json
