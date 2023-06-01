@@ -1,0 +1,17 @@
+<!-- app/views/emails/index.html.erb-->
+<div class="mx-auto max-w-3xl mt-24">
+  <div class="mb-6">
+    <h1 class="font-bold text-4xl">Emails</h1>
+  </div>
+
+  <%= render "form", email: Email.new %>
+
+  <div id="emails" class="divide-y list-none">
+    <%= render @emails %>
+  </div>
+</div>
+
+
+
+
+

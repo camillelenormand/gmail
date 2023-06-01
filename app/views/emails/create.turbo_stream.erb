@@ -1,0 +1,6 @@
+<%= turbo_stream.prepend "emails" do %>
+  <%= render "email", email: @email %>
+<% end %>
+<%= turbo_stream.replace "#{dom_id(Email.new)}_form" do %>
+  <%= render "form", email: Email.new %>
+<% end %>

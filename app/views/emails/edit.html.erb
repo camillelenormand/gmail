@@ -1,0 +1,14 @@
+<h1>Editing email</h1>
+
+<%turbo_frame_tag "email" do %>
+
+<%= render "form", email: @email %>
+
+<% end %>
+
+<br>
+
+<div>
+  <%= link_to "Show this email", @email %> |
+  <%= link_to "Back to emails", emails_path %>
+</div>
