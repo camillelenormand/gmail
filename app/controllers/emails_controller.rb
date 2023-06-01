@@ -5,6 +5,9 @@ class EmailsController < ApplicationController
   # GET /emails or /emails.json
   def index
     @emails = Email.all
+    @count = Email.count
+    puts "count: #{@count}"
+  
   end
 
   # GET /emails/1 or /emails/1.json
